@@ -1,0 +1,20 @@
+:root 
+{/*VARIABLES*/
+/*BODY*/
+--gradient_default_body:linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+/*HEADER*/
+--gradient_default_header:linear-gradient(to top, #30cfd0 0%, #330867 100%);
+--gradient_default_h1:radial-gradient(circle farthest-corner at center center, #F6F8F9 0%, #E5EBEE 30%, #D7DEE3 60%, #F5F7F9 100%);
+/*BODYBOX*/
+--gradient_default_bodybox:linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+/*STATUS_BAR*/
+--gradient_default_status-bar:radial-gradient(circle at 100% 0%, #ccb7f6 0, #d5b4f1 7.14%, #ddb1ec 14.29%, #e5afe6 21.43%, #ecade0 28.57%, #f2abd9 35.71%, #f7aad1 42.86%, #fba9ca 50%, #fea8c2 57.14%, #ffa8bb 64.29%, #ffa9b3 71.43%, #ffa9ac 78.57%, #ffaaa5 85.71%, #ffac9e 92.86%, #fdad98 100%);
+/*MESANJE USUARIO*/
+--color_default_mu_border:#A2EDFD;
+--color_default_mu_badground:#A2EDFD;
+--color_default_mu_font:black;
+/*RESPUESTA BOT*/
+--color_default_rb_border:#19C9EF;
+--color_default_rb_badground:#19C9EF;
+--color_default_rb_font:white;
+}
