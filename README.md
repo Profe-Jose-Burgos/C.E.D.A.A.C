@@ -1,7 +1,7 @@
 # <img src="https://cdn-icons-png.flaticon.com/512/3398/3398643.png" alt="robot" width="40" height="40"/> C.E.D.A.A.C
 Proyecto Hackathon.
 
-Este chatbot fue desarrollado con el fin de ser presentado como proyecto final, desarrollado por el grupo #6.
+Este chatbot fue desarrollado con el fin de ser presentado en la hackathon de SIC, desarrollado por el grupo #6"C.E.D.A.A.C".
 Funcionando en: https://bot.fasmsserver.com/
 # Chatbot-Hackathon
 Proyecto-Hackathon
