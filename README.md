@@ -3,10 +3,10 @@ Proyecto Hackathon.
 
 Este chatbot fue desarrollado con el fin de ser presentado en la hackathon de SIC, desarrollado por el grupo #6"C.E.D.A.A.C".
 
-Funcionando en: https://bot.fasmsserver.com/
-# Chatbot-Hackathon
-Proyecto-Hackathon
+<img src="https://github.com/Profe-Jose-Burgos/C.E.D.A.A.C/raw/main/ahora.png">
 
+Funcionando en: https://bot.fasmsserver.com/
+## Requisitos
 Python 3.9.13 y las siguientes librerias:
 ```python
 import pip
@@ -27,6 +27,7 @@ nltk.download('stopwords')
 nltk.download('omw-1.4')
 ```
 <h3 align="left">Desarrolladores</h3>
+
 <p>Raul Serrano:"Modelo de IA, Interfaz web"<br>
 Joseph James:"Modelo de IA, Interfaz web"<br>
 Itzis Altamiranda:"Modelo de IA"<br>
