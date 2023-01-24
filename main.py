@@ -1,86 +1,113 @@
-from flask import Flask, render_template, request
-import nltk, json, pickle
+from flask import Flask, render_template,request
+import nltk, json,pickle
 import numpy as np
 import random
 from intents_reference import start_intents
 from model_builder import start_model
 from nltk.stem import SnowballStemmer
 from tensorflow.keras.models import load_model
-stemmer=SnowballStemmer
+stemmer = SnowballStemmer('spanish')
 
-model=load_model("chatbot_model.h5")#cargamos el modelo
-intents=json.loads(open("intents.json").read())#cargamos el json
-words=pickle.load(open("words.pkl","rb"))#cargamos la biblioteca de palabras
+
+model=load_model("chatbot_model.h5")#Cargamos el modelo
+intents= json.loads(open("intents.json").read())#Cargamos el json | "base de datos"
+words=pickle.load(open("words.pkl","rb"))#cargamos la biblioteca de las palabras
 classes=pickle.load(open("classes.pkl","rb"))#cargamos la biblioteca de las clases
 
-def clean_up_sentence(sentence):# con esto tokenizamos y lematizamos
-    sentence_words=nltk.word_tokenize(sentence)#primero se tokeniza
-    sentence_words=[stemmer.stem(word.lower()) for word in sentence_words]#aqui se lematiza
+
+def clean_up_sentence(sentence):
+    
+    sentence_words=nltk.word_tokenize(sentence) #tokenizamos las palabras
+    sentence_words=[stemmer.stem(word.lower()) for word in sentence_words] #lematizamos las palabras
     return sentence_words
 
 
-def bow(sentence,words,show_details=True):
+def bow (sentence,words,show_details=True): 
     sentence_words=clean_up_sentence(sentence)
-
-    bag=[0]*len(words) #bag == bolsa de valores
+    
+    bag=[0]*len(words)
+    
     for i in sentence_words:
         for j,w in enumerate(words):
-            if w==i: #asigna 1 si la palabra en la posicion del vocabulario
+            if w==i: #Asigna 1 si la palabra esta en la posicion de las palabras
                 bag[j]=1
                 if show_details:
-                    print("Está en la bolsa 👍",w)
+                    print("encontrado en la bolsa: ",w)
     return (np.array(bag))
 
 
-def predict_class(sentence, model): #aqui se toma la palabra y el modelo para decidir que clase es
-    #                                es decir clasifica el mensaje del usuario para saber como responder.
-    p=bow(sentence, words,show_details=False)
 
-    res=model.predict(np.array([p]))[0]
-    #con "res" lo que hacemos es predecir la eficacia
-
-
-    ERROR_THRESHOLD=0.25 #Umbral de error 
-
-    results=[[i,r] for i,r in enumerate(res) if r > ERROR_THRESHOLD] 
-    # hacemos que ennumere solamente el resultado que sea mayor al 25%
-
-    results.sort(key=lambda x: x[1], reverse=True)
-    #en results.sort --- Lo sorteamos en longitudes, es decir de mayor a menor
-
-    return_list=[]
+def predict_class(sentence,model):#Para predecir que tipo o clase de palabra es
+    
+    p = bow(sentence,words,show_details=False)
+    
+    res = model.predict(np.array([p]))[0] #retornamos lo eficiente del modelo
+    
+    
+    ERROR_THRESHOLD=0.25 #Umbral de error
+    
+    
+   
+    results= [[i,r] for i,r in enumerate(res) if r>ERROR_THRESHOLD] 
+    #si el umbral de error es mayor a r entonces lo toma
+    
+    
+    
+    
+    
+    results.sort(key=lambda x: x[1], reverse=True)  #Ordena el resultado de menor a mayor el resultado
+    #                                                de las clases.
+    return_list = []    
     for r in results:   
         return_list.append({"intent": classes[r[0]], "probability": str(r[1])})   
-    print("print de return list: ", return_list)  ##  me dice de que tipo es y cual es la probabilidad de que sea correcto
+    print("print de return list: ", return_list) #Imprime los datos del mensaje diciendome la clase y la probabilidad
     return return_list 
-def get_response(ints,intents_json):
-    tag= ints[0]["intent"]
-    list_of_intents=intents_json["intents"]
-    for i in list_of_intents:
-        if (i["tag"]==tag):
-            result=random.choice(i["responses"])
+
+
+def get_response(ints,intents_json): #revisa la clase del "tag" y obtiene una respuesta aleatoria
+    tag= ints[0]["intent"] 
+    list_of_intents=intents_json["intents"] #sacamos el json las referencias para generar las respuestas
+    for i  in list_of_intents: #i toma el valor de las referencias del json
+        if (i["tag"]==tag): #Si i en la posicion de las clases es igual a la clase que ingreso el usuario
+            result= random.choice(i["responses"]) #toma una respuesta aleatoria dentro de la propia clase de "i"
             break
-        return result
+    return result
 
-app=Flask(__name__, instance_relative_config=True)
-app.debug=False
-@app.route('/chatbot',methods=['POST'])
+
+app= Flask(__name__, instance_relative_config=True)# declaramos la app de flask
+app.debug=False# para que se guarden los cambios al segundo | en este caso lo tenemos en False
+@app.route('/chatbot',methods=['POST','GET'])#la ruta que se encarga de recibir el mensaje de la pagina web
 def chatbot_response():
+    message=request.json["message"]#obtiene el mensaje del formulario en la pagina web
+    print("Este es el mensaje"+message)#impresion del mensaje del usuario
+    ints=predict_class(message,model)#toma el mensaje y el modelo y predice en que clase está
+    response=get_response(ints,intents)#va a la funcion get_response para obtener la respuesta
+    print(response)
+    return response# retorna la respuesta a la pagina web para que sea impreso
+
+
+@app.route('/resp',methods=['POST','GET'])
+def chatbot_mensaje():
     message=request.json["message"]
-    print("Mensaje del usuario: "+message)
-    ints=predict_class(message,model)
-    response=get_response(ints,intents)
-    print("Esta es la respuesta del bot: "+response)
-    return response
+    print("Este es el mensaje"+message)
+    return message
 
 
-@app.route('/')
-def index():
-    return render_template('index.html')
+@app.route('/bot')#ruta de la pagina web donde se encuentra el chatbot
+def index():# esta funcion toma la pagina para hacer la conexion http
+    return render_template('index.html')#retornamos la pagina web para que este en la ruta /bot
 
-if __name__ == '__main__':
+@app.route('/')#ruta principal de la pagina web donde se muestra la bienvenida.
+def Welcome():
+    return render_template('Welcome.html')#Retornamos la pagina web para que este en la ruta principal
 
-    #start_intents()
-    #start_model()
-    app.run()
+
+
+
     
+    
+if __name__=='__main__':
+    start_intents()
+    start_model()
+    
+    app.run()

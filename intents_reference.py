@@ -21,6 +21,7 @@ def start_intents():
                 "buenas tardes",
                 "buenas noches",
                 "buenas",
+                "buenass",
                 "holi",
                 "ola",
                 "hey",
@@ -28,8 +29,15 @@ def start_intents():
                 "alo",
                 "que pasa?",
                 "que tal",
-                "que eres"
-  
+                "una consulta",
+                "una pregunta",
+                "quien habla?"
+                "ayudame",
+                "me puedes ayudar por favor?",
+                "por favor ayudame con algo",
+                "puedes ayudarme con algo por favor?",
+                "como comienzo?",
+                "que eres?"
             ],
             "responses": [
                 "hola, soy un prototipo de un bot que esta dispuesto a responder tu solicitud, en que puedo ayudarte?",
@@ -53,6 +61,12 @@ def start_intents():
                 "callate",
                 "me despido",
                 "nos vemos",
+                "ya basta",
+                "ya",
+                "me voy",
+                "hasta nunca",
+                "hasta siempre",
+                "hasta la proxima",
                 "silencio"
             ],
             "responses": [
@@ -79,7 +93,6 @@ def start_intents():
                 "cual es la mejor manera de contactar al servicio al cliente?",
                 "como puedo contactar a su servicio al cliente?",
                 "como puedo comunicarme con el servicio al cliente?",
-                "cual es el numero o correo electronico para contactar al servicio al cliente?",
                 "hay una forma en linea para contactar al servicio al cliente?",
                 "tienen un chat en vivo para el servicio al cliente?",
                 "hay una direccion de correo electronico para el servicio al cliente?",
@@ -93,6 +106,9 @@ def start_intents():
                 "existe una pagina de soporte para el servicio al cliente?",
                 "puedo obtener asistencia en vivo del servicio al cliente?",
                 "hay un sistema de ticket para el servicio al cliente?",
+                "telefono",
+                "numero de telefono",
+                "linea telefonica",
                 "como puedo hacer una queja al servicio al cliente?"
             ],
             "responses": [
@@ -104,6 +120,7 @@ def start_intents():
             "tag": "devoluciones",
             "patterns": [
                 "como puedo hacer una devolucion o cambio",
+                "devolucion",
                 "como puedo solicitar una devolucion o cambio ?",
                 "cual es el proceso para hacer una devolucion o cambio ?",
                 "necesito un numero de autorizacion para hacer una devolucion o cambio ?",
@@ -210,6 +227,8 @@ def start_intents():
                 "como manejan los envios a direcciones de oficina o de negocio?",
                 "como manejan los envios con requerimientos especiales, como firma o entrega en un horario especifico?",
                 "como manejan los envios a direcciones de correo de apartado?",
+                "tienen delivery?",
+                "delivery",
                 "como manejan los envios a direcciones de entrega diferentes a la direccion de facturacion?"
             ],
             "responses": [
@@ -222,6 +241,8 @@ def start_intents():
             "patterns": [
                 "como puedo pagar mi pedido",
                 "que metodos de pago aceptan?",
+                "pagos",
+                "pagar",
                 "puedo pagar mi pedido en linea?",
                 "aceptan tarjetas de credito/debito?",
                 "aceptan pagos con paypal?",
@@ -281,7 +302,8 @@ def start_intents():
                 "como puedo obtener soporte para mi dispositivo?",
                 "como puedo recibir ayuda para mi problema tecnico?",
                 "como puedo obtener soporte para un error?",
-                "como puedo obtener soporte para un problema con mi software?"
+                "como puedo obtener soporte para un problema con mi software?",
+                "mandenme un tecnico",
                 "quiero un tecnico"
             ],
             "responses": [
@@ -321,6 +343,10 @@ def start_intents():
                 "como puedo cancelar o modificar mi transaccion en linea?",
                 "como puedo desistir de mi compra?",
                 "como puedo desistir de mi pedido?",
+                "cancelar orden",
+                "cancelar pedido",
+                "modificar pedido",
+                "modificar orden",
                 "como puedo cancelar o modificar mi orden de entrega?"
             ],
             "responses": [
@@ -333,6 +359,7 @@ def start_intents():
             "patterns": [
                 "como puedo obtener un reembolso",
                 "devolucion",
+                "reembolso",
                 "como puedo solicitar un reembolso?",
                 "como puedo pedir un reembolso?",
                 "como puedo hacer una devolucion?",
@@ -405,7 +432,10 @@ def start_intents():
                 "puedo hablar con un agente de atencion al cliente a traves de una videollamada?",
                 "puedo hablar con un representante de atencion al cliente a traves de una aplicacion?",
                 "puedo hablar con alguien de atencion al cliente a traves de redes sociales?",
-                "quiero hablar con un humano"
+                "quiero hablar con un humano",
+                "especialista",
+                "quiero un especialista",
+                "quiero un asesor",
                 "quiero un agente"
             ],
             "responses": [
@@ -453,6 +483,8 @@ def start_intents():
                 "como puedo solicitar una factura o un prestamo en linea?",
                 "como puedo solicitar una factura o un prestamo telefonicamente?",
                 "como puedo solicitar una factura o un prestamo a traves de un correo electronico?",
+                "factura",
+                "prestamo",
                 "como puedo solicitar una factura o un prestamo a traves de una aplicacion movil?"
             ],
             "responses": [
@@ -472,7 +504,10 @@ def start_intents():
                 "podria proporcionarme detalles sobre un producto determinado?",
                 "podria brindarme informacion acerca de un producto especifico?",
                 "podria darme detalles sobre un producto en particular?",
-                "podria proporcionarme informacion sobre un producto en especifico?"
+                "podria proporcionarme informacion sobre un producto en especifico?",
+                "informacion sobre un producto",
+                "detalles sobre un producto",
+                "producto",
                 "me podria brindar mayor informacion de un articulo"
             ],
             "responses": [
@@ -485,6 +520,7 @@ def start_intents():
             "patterns": [
                 "puede ayudarme a encontrar una tienda cercana",
                 "puedes ayudarme a encontrar una tienda cercana?",
+                "donde los puedo encontrar?",
                 "donde esta la tienda mas cercana?",
                 "podrias indicarme la direccion de la tienda mas cercana?",
                 "hay alguna tienda cercana por aqui?",
@@ -496,7 +532,10 @@ def start_intents():
                 "tienda",
                 "tienda cercana",
                 "sucursal",
+                "ubicacion",
                 "locacion",
+                "que ubicacion tiene la empresa",
+                "cual es la ubicacion de tu empresa",
                 "puedes ayudarme a encontrar una  sucursal cercana?",
                 "donde esta la  sucursal mas cercana?",
                 "podrias indicarme la direccion de la  sucursal mas cercana?",
@@ -516,18 +555,23 @@ def start_intents():
             "tag": "agradecimiento",
             "patterns": [
                 "gracias",
+                "jaja gracias",
                 "gracias por ayudarme",
                 "gracias por tu ayuda",
+                "gracias por la ayuda",
                 "merci",
                 "muchas gracias",
                 "se lo agradezco",
                 "me sirvio la informacion",
                 "fue de ayuda",
                 "vale",
+                "de acuerdo",
                 "esta bien",
                 "thx",
                 "thank u",
+                "si",
                 "ok",
+                "okay",
                 "thanks",
                 "thank you",
                 "mil gracias",
@@ -553,7 +597,6 @@ def start_intents():
                 "eres un salvador",
                 "eres un angel",
                 "te debo una",
-                "ya",
                 "no sabes cuanto significa para mi",
                 "no sabes cuanto lo necesitaba",
                 "no sabes cuanto me ayudo",
@@ -565,10 +608,30 @@ def start_intents():
             "context": [""]
         },
         {
+            "tag": "cotizacion",
+            "patterns": [
+                "quiero cotizar algo",
+                "necesito presupuesto",
+                "precio al contado",
+                "para cotizar?",
+                "quiero el precio completo",
+                "quiero el precio total"
+            ],
+            "responses": [
+                "para la cotizacion se abrira una pestaña en la cual podra proporcionar los datos requeridos."
+            ],
+            "contexto": [
+                ""
+            ]
+        },
+        {
             "tag": "faqcatalogo",
             "patterns": [
                 "tiene algun catalogo o lista de precio que pueda ver",
                 "podria ver un catalogo o lista de precios?",
+                "catalogo",
+                "lista de precios",
+                "precios",
                 "tienen algun catalogo o lista de precios disponible para ver?",
                 "podrian proporcionarme un catalogo o lista de precios?",
                 "tienen un catalogo o lista de precios en linea que pueda ver?",
@@ -576,6 +639,7 @@ def start_intents():
                 "podria ver una lista de precios de sus productos?",
                 "tienen un catalogo o lista de precios actualizado que pueda consultar?",
                 "podria ver una lista de precios de sus productos en oferta?",
+                "productos en oferta",
                 "podria obtener informacion detallada sobre los precios de sus productos?"
             ],
             "responses": [
@@ -589,6 +653,7 @@ def start_intents():
                 "catalogo",
                 "lista de productos",
                 "inventario",
+                "quiero los precios de un producto",
                 "catalogo de productos",
                 "listado de articulos",
                 "coleccion de productos",
@@ -645,10 +710,10 @@ def start_intents():
                 "lista de bienes a la venta"
             ],
             "responses": [
-                "funciona"
+                "para su solicitud se abrira un pdf con la informacion requerida"
             ],
             "context": [
-                "catalogo"
+                ""
             ]
         },
         {
@@ -656,11 +721,13 @@ def start_intents():
             "patterns": [
                 "no funciona",
                 "el catalogo no funciona",
+                "no abre",
                 "no es lo que buscaba",
                 "no me sirvio",
                 "no me redirige a ningun lugar",
                 "la pagina web esta caida",
                 "no sirve",
+                "no sale",
                 "no esta funcionando",
                 "el catalogo no esta funcionando",
                 "no es lo que estaba buscando",
@@ -706,6 +773,9 @@ def start_intents():
                 "no esta funcionando de manera adecuada, presenta errores",
                 "no esta disponible en este momento debido a problemas tecnicos",
                 "no esta respondiendo adecuadamente a mis solicitudes",
+                "estoy harto",
+                "estoy harta",
+                "no",
                 "no esta disponible debido a problemas tecnicos o mantenimiento"
             ],
             "responses": [
@@ -769,7 +839,9 @@ def start_intents():
             "patterns":[
                 "cual es tu nombre",
                 "como te llaman",
-                "como te dicen"
+                "como te dicen",
+                "quien eres?",
+                "como te puedo decir?"
             ],
             "responses":[
                 "mi nombre es c.e.d.a.a.c, que significa chatbot empresarial de atencion al cliente, un placer saludarte."
@@ -779,13 +851,87 @@ def start_intents():
             ]
         },
         {
-            "tag":"",
+            "tag": "contacto",
             "patterns":[
-                "en que me puedes ayudar",
-                "que puedes hacer por mi"
+                "como puedo contactarme con la empresa",
+                "como me puedo contactar con ustedes?",
+                "cual es tu email?"
+                "email",
+                "correo electronico"
             ],
             "responses":[
-                "Mi funcion es ayudar a los clientes con pagos, creditos, envios, pedidos, reembolsos, devoluciones, quejas, reclamos, informacion detallada sobre nuestros productos, formas de contactarnos y otras consultas de atencion al cliente."
+                "Puede contactarnos a nuestro correo electronico: suempresa@gmail.com o al numero telefonico: +507 00000000."
+            ],
+            "context":[
+                ""
+            ]
+        },
+        {
+            "tag": "samsung",
+            "patterns": [
+                "samsung",
+                "que es samsung",
+                "samsung innovation campus",
+                "sic"
+            ],
+            "responses": [
+                "samsung es un una corporacion electronica multinacional de corea del sur. se especializa en la produccion de productos electronicos de consumo e industriales.",
+                "gracias a samsung fue posible mi creacion por los estudiantes del grupo 6 del sic."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "cita",
+            "patterns": [
+                "quiero agendar una cita",
+                "necesito una cita",
+                "cita",
+                "cita de asesoria"
+            ],
+            "responses": [
+                "para agendar una cita debe proporcionar su nombre, cedula, dia y hora de disponibilidad y quedara agendada automaticamente."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "cambio de cita",
+            "patterns": [
+                "quiero cambiar mi cita",
+                "es posible cambiar mi cita agendada",
+                "quiero cancelar mi cita",
+                "quiero reagendar mi cita",
+                "cambiar cita",
+                "cambio de cita",
+                "quiero mover mi cita para otro dia",
+                "reagendar cita",
+                "mover cita",
+                "puedo cambiar mi cita para la mañana?",
+                "puedo cambiar mi cita para la tarde?",
+                "puedo cambiar mi cita para la noche?",
+                "que debo hacer para cambiar mi cita?"
+            ],
+            "responses": [
+                "para reagendar o cancelar su cita, por favor escriba al correo: suempresa@gmail.com, indicando el motivo y un representante se contactara con usted lo antes posible, gracias por preferirnos"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag":"funcionamiento",
+            "patterns":[
+                "en que me puedes ayudar",
+                "que puedes hacer por mi",
+                "a que te dedicas",
+                "que haces",
+                "como funcionas"
+            ],
+            "responses":[
+                "Mi funcion es ayudar a los clientes con pagos, creditos, envios, pedidos, reembolsos, devoluciones, quejas, reclamos, informacion detallada sobre productos, formas de contactarnos y otras consultas de atencion al cliente."
             ]
 
         }

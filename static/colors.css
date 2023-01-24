@@ -1,20 +1,23 @@
+@import url('https://fonts.cdnfonts.com/css/samsung-sans-4');
 :root 
 {/*VARIABLES*/
 /*BODY*/
---gradient_default_body:linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+--gradient_default_body:linear-gradient(90deg, rgba(60,91,166,1) 4%, rgba(150,174,219,1) 100%);
 /*HEADER*/
---gradient_default_header:linear-gradient(to top, #30cfd0 0%, #330867 100%);
+--gradient_default_header:linear-gradient(to top, #1B1733 0%, #1b1733 100%);
 --gradient_default_h1:radial-gradient(circle farthest-corner at center center, #F6F8F9 0%, #E5EBEE 30%, #D7DEE3 60%, #F5F7F9 100%);
 /*BODYBOX*/
---gradient_default_bodybox:linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+--gradient_default_bodybox:linear-gradient(to top, #c8d7f0 0%, #c8d7f0 100%);
 /*STATUS_BAR*/
---gradient_default_status-bar:radial-gradient(circle at 100% 0%, #ccb7f6 0, #d5b4f1 7.14%, #ddb1ec 14.29%, #e5afe6 21.43%, #ecade0 28.57%, #f2abd9 35.71%, #f7aad1 42.86%, #fba9ca 50%, #fea8c2 57.14%, #ffa8bb 64.29%, #ffa9b3 71.43%, #ffa9ac 78.57%, #ffaaa5 85.71%, #ffac9e 92.86%, #fdad98 100%);
+--gradient_default_status-bar:radial-gradient(circle at 100% 0%, #3c5ba6 0, #3c5ba6 7.14%, #3c5ba6 14.29%, #3c5ba6 21.43%, #3c5ba6 28.57%, #3c5ba6 35.71%, #3c5ba6 42.86%, #3c5ba6 50%, #3c5ba6 57.14%, #3c5ba6 64.29%, #3c5ba6 71.43%, #3c5ba6 78.57%, #3c5ba6 85.71%, #3c5ba6 92.86%, #3c5ba6 100%);
 /*MESANJE USUARIO*/
---color_default_mu_border:#A2EDFD;
---color_default_mu_badground:#A2EDFD;
---color_default_mu_font:black;
+--color_default_mu_border:#6280c5;
+--color_default_mu_badground:#6280c5;
+--color_default_mu_font:white;
 /*RESPUESTA BOT*/
---color_default_rb_border:#19C9EF;
---color_default_rb_badground:#19C9EF;
+--color_default_rb_border:#334C9C;
+--color_default_rb_badground:#334C9C;
 --color_default_rb_font:white;
+/*Tipografia*/
+--font:'Samsung Sans', sans-serif;
 }
