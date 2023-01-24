@@ -21,6 +21,7 @@ def start_intents():
                 "buenas tardes",
                 "buenas noches",
                 "buenas",
+                "buenass",
                 "holi",
                 "ola",
                 "hey",
@@ -28,7 +29,10 @@ def start_intents():
                 "alo",
                 "que pasa?",
                 "que tal",
-                "que eres"
+                "una consulta",
+                "una pregunta",
+                "quien habla?"
+                "que eres?"
   
             ],
             "responses": [
@@ -53,6 +57,7 @@ def start_intents():
                 "callate",
                 "me despido",
                 "nos vemos",
+                "ya basta",
                 "silencio"
             ],
             "responses": [
@@ -281,7 +286,7 @@ def start_intents():
                 "como puedo obtener soporte para mi dispositivo?",
                 "como puedo recibir ayuda para mi problema tecnico?",
                 "como puedo obtener soporte para un error?",
-                "como puedo obtener soporte para un problema con mi software?"
+                "como puedo obtener soporte para un problema con mi software?",
                 "quiero un tecnico"
             ],
             "responses": [
@@ -405,7 +410,8 @@ def start_intents():
                 "puedo hablar con un agente de atencion al cliente a traves de una videollamada?",
                 "puedo hablar con un representante de atencion al cliente a traves de una aplicacion?",
                 "puedo hablar con alguien de atencion al cliente a traves de redes sociales?",
-                "quiero hablar con un humano"
+                "quiero hablar con un humano",
+                "especialista",
                 "quiero un agente"
             ],
             "responses": [
@@ -497,6 +503,8 @@ def start_intents():
                 "tienda cercana",
                 "sucursal",
                 "locacion",
+                "que ubicacion tiene la empresa",
+                "cual es la ubicacion de tu empresa",
                 "puedes ayudarme a encontrar una  sucursal cercana?",
                 "donde esta la  sucursal mas cercana?",
                 "podrias indicarme la direccion de la  sucursal mas cercana?",
@@ -569,6 +577,8 @@ def start_intents():
             "patterns": [
                 "tiene algun catalogo o lista de precio que pueda ver",
                 "podria ver un catalogo o lista de precios?",
+                "catalogo",
+                "lista de precios",
                 "tienen algun catalogo o lista de precios disponible para ver?",
                 "podrian proporcionarme un catalogo o lista de precios?",
                 "tienen un catalogo o lista de precios en linea que pueda ver?",
@@ -779,13 +789,16 @@ def start_intents():
             ]
         },
         {
-            "tag":"",
+            "tag":"func",
             "patterns":[
                 "en que me puedes ayudar",
-                "que puedes hacer por mi"
+                "que puedes hacer por mi",
+                "a que te dedicas",
+                "que haces",
+                "como funcionas"
             ],
             "responses":[
-                "Mi funcion es ayudar a los clientes con pagos, creditos, envios, pedidos, reembolsos, devoluciones, quejas, reclamos, informacion detallada sobre nuestros productos, formas de contactarnos y otras consultas de atencion al cliente."
+                "Mi funcion es ayudar a los clientes con pagos, creditos, envios, pedidos, reembolsos, devoluciones, quejas, reclamos, informacion detallada sobre productos, formas de contactarnos y otras consultas de atencion al cliente."
             ]
 
         }

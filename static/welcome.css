@@ -1,0 +1,47 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+p{
+font-size: 2vw;
+color:white;
+}
+
+body{
+    background-color:#96AEDB;
+
+}
+
+img{
+    background-color:#C8D7F0;
+    border-radius:50%;
+    padding:1vw;
+    animation: fadeIn 3s ease;
+}
+
+h1{
+    background-color: #1B1733;
+    color:white;
+    padding: 1vw;
+    border-radius:10vw;
+}
+
+
+
+.bluebox{
+    position:relative;
+    background-color:#3C5BA6;
+    padding: 1vw;
+    border-radius:2vw;
+    bottom:-18px;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+    to{
+        oopacity:1;
+    }
+}
