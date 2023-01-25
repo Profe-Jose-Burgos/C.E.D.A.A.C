@@ -78,12 +78,17 @@ app= Flask(__name__, instance_relative_config=True)# declaramos la app de flask
 app.debug=False# para que se guarden los cambios al segundo | en este caso lo tenemos en False
 @app.route('/chatbot',methods=['POST','GET'])#la ruta que se encarga de recibir el mensaje de la pagina web
 def chatbot_response():
-    message=request.json["message"]#obtiene el mensaje del formulario en la pagina web
-    print("Este es el mensaje"+message)#impresion del mensaje del usuario
-    ints=predict_class(message,model)#toma el mensaje y el modelo y predice en que clase está
-    response=get_response(ints,intents)#va a la funcion get_response para obtener la respuesta
-    print(response)
-    return response# retorna la respuesta a la pagina web para que sea impreso
+    try:
+        message=request.json["message"]#obtiene el mensaje del formulario en la pagina web
+        print("Este es el mensaje"+message)#impresion del mensaje del usuario
+        ints=predict_class(message,model)#toma el mensaje y el modelo y predice en que clase está
+        response=get_response(ints,intents)#va a la funcion get_response para obtener la respuesta
+        print(response)
+        return response# retorna la respuesta a la pagina web para que sea impreso
+    except Exception as e:
+        print("Error: ", e)
+        return "Lo siento, no pude entender tu mensaje."
+
 
 
 @app.route('/resp',methods=['POST','GET'])
@@ -107,7 +112,7 @@ def Welcome():
     
     
 if __name__=='__main__':
-    start_intents()
-    start_model()
+    #start_intents()
+    #start_model()
     
     app.run()

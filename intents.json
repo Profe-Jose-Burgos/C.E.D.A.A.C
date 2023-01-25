@@ -25,6 +25,7 @@
                 "quien habla?ayudame",
                 "me puedes ayudar por favor?",
                 "por favor ayudame con algo",
+                "puedes ayudarme con algo por favor?",
                 "como comienzo?",
                 "que eres?"
             ],
@@ -631,7 +632,9 @@
                 "quiero cotizar algo",
                 "necesito presupuesto",
                 "precio al contado",
-                "para cotizar?"
+                "para cotizar?",
+                "quiero el precio completo",
+                "quiero el precio total"
             ],
             "responses": [
                 "para la cotizacion se abrira una pesta\u00f1a en la cual podra proporcionar los datos requeridos."
@@ -671,6 +674,7 @@
                 "catalogo",
                 "lista de productos",
                 "inventario",
+                "quiero los precios de un producto",
                 "catalogo de productos",
                 "listado de articulos",
                 "coleccion de productos",
@@ -917,7 +921,7 @@
             "responses": [
                 "para agendar una cita debe proporcionar su nombre, cedula, dia y hora de disponibilidad y quedara agendada automaticamente."
             ],
-            "contexto": [
+            "context": [
                 ""
             ]
         },
@@ -929,6 +933,7 @@
                 "quiero cancelar mi cita",
                 "quiero reagendar mi cita",
                 "cambiar cita",
+                "cambio de cita",
                 "quiero mover mi cita para otro dia",
                 "reagendar cita",
                 "mover cita",
@@ -940,7 +945,7 @@
             "responses": [
                 "para reagendar o cancelar su cita, por favor escriba al correo: suempresa@gmail.com, indicando el motivo y un representante se contactara con usted lo antes posible, gracias por preferirnos"
             ],
-            "contexto": [
+            "context": [
                 ""
             ]
         },
