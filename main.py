@@ -112,7 +112,7 @@ def Welcome():
     
     
 if __name__=='__main__':
-    #start_intents()
-    #start_model()
+    start_intents()
+    start_model()
     
     app.run()

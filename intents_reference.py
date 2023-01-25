@@ -37,6 +37,7 @@ def start_intents():
                 "por favor ayudame con algo",
                 "puedes ayudarme con algo por favor?",
                 "como comienzo?",
+                "tengo una duda",
                 "que eres?"
             ],
             "responses": [
@@ -243,6 +244,8 @@ def start_intents():
                 "que metodos de pago aceptan?",
                 "pagos",
                 "pagar",
+                "quiero cancelar mi deuda",
+                "quiero pagar mi deuda",
                 "puedo pagar mi pedido en linea?",
                 "aceptan tarjetas de credito/debito?",
                 "aceptan pagos con paypal?",
@@ -419,6 +422,11 @@ def start_intents():
                 "puedo hablar con un especialista en soporte al cliente?",
                 "puedo hablar con un agente de soporte al cliente?",
                 "puedo hablar con un asesor de soporte al cliente?",
+                "quiero contactar a servicio al cliente",
+                "quiero contactar a servicio al cliente",
+                "numero de atencion al cliente",
+                "numero",
+                "quiero numero de cliente de la empresa",
                 "puedo hablar con un representante de ayuda al cliente?",
                 "puedo hablar con alguien de ayuda al cliente?",
                 "puedo hablar con un especialista en ayuda al cliente?",
@@ -434,6 +442,9 @@ def start_intents():
                 "puedo hablar con alguien de atencion al cliente a traves de redes sociales?",
                 "quiero hablar con un humano",
                 "especialista",
+                "agente",
+                "representante",
+                "asesor",
                 "quiero un especialista",
                 "quiero un asesor",
                 "quiero un agente"
@@ -613,6 +624,7 @@ def start_intents():
                 "quiero cotizar algo",
                 "necesito presupuesto",
                 "precio al contado",
+                "precio neto",
                 "para cotizar?",
                 "quiero el precio completo",
                 "quiero el precio total"
@@ -620,7 +632,7 @@ def start_intents():
             "responses": [
                 "para la cotizacion se abrira una pestaña en la cual podra proporcionar los datos requeridos."
             ],
-            "contexto": [
+            "context": [
                 ""
             ]
         },
@@ -888,10 +900,11 @@ def start_intents():
                 "quiero agendar una cita",
                 "necesito una cita",
                 "cita",
+                "me puedes agendar una cita?",
                 "cita de asesoria"
             ],
             "responses": [
-                "para agendar una cita debe proporcionar su nombre, cedula, dia y hora de disponibilidad y quedara agendada automaticamente."
+                "por supuesto, para agendar una cita se abrira un link con los pasos a seguir."
             ],
             "context": [
                 ""
