@@ -571,6 +571,7 @@ def start_intents():
                 "gracias por tu ayuda",
                 "gracias por la ayuda",
                 "merci",
+                "bien",
                 "muchas gracias",
                 "se lo agradezco",
                 "me sirvio la informacion",
@@ -786,9 +787,8 @@ def start_intents():
                 "no esta disponible en este momento debido a problemas tecnicos",
                 "no esta respondiendo adecuadamente a mis solicitudes",
                 "estoy harto",
-                "estoy harta",
-                "no",
-                "no esta disponible debido a problemas tecnicos o mantenimiento"
+                "estoy harta"
+                
             ],
             "responses": [
                 "lo siento, si no obtuvo respuesta puede contactar a nuestro servicio al cliente en el telefono: +507 00000000"
@@ -843,7 +843,7 @@ def start_intents():
             "tag":"no respuesta",
             "patterns":[""],
             "responses":["No he reconocido la pregunta, es posible que no se haya escrito correctamente",
-                        "No estoy seguro de lo que intentas decir. ¿Podrias proporcionar mas informacion o contexto?"],
+                        "No estoy seguro de lo que intentas decir. Podrias proporcionar mas informacion o contexto?"],
             "context": [""]
         },
         {
@@ -941,16 +941,191 @@ def start_intents():
                 "que puedes hacer por mi",
                 "a que te dedicas",
                 "que haces",
-                "como funcionas"
+                "como funcionas",
+                "Que funcion cumples",
+                "cual es tu funcion",
+                "que funcion te programaron",
+                "que funciones tienes implementadas",
+                "para que sirves",
+                "que tanto puedes hacer",
+                "que utilidad tienes",
+                "para que funcionas",
+                "para que eres util",
+                "para que me sirves"
             ],
             "responses":[
-                "Mi funcion es ayudar a los clientes con pagos, creditos, envios, pedidos, reembolsos, devoluciones, quejas, reclamos, informacion detallada sobre productos, formas de contactarnos y otras consultas de atencion al cliente."
+                "Mi funcion es ayudar a los clientes con pagos, creditos, envios, pedidos, reembolsos, devoluciones, quejas, reclamos, informacion detallada sobre productos, formas de contactarnos y otras consultas de atencion al cliente. Ademas, tambien estoy capacitado para brindar soluciones y ayudar a resolver problemas relacionados con la cuenta del cliente, como problemas de inicio de sesion, actualizacion de informacion de contacto y actualizacion de la informacion de pago. Tambien puedo proporcionar informacion sobre politicas de envio, tiempos de entrega, y detalles sobre garantias y devoluciones. Mi objetivo es asegurar que cada cliente tenga una experiencia satisfactoria y que sus necesidades sean atendidas de manera eficiente y amable."
             ]
 
+        },
+        {
+            "tag": "entradadevoz",
+            "patterns": [
+                "te puedo llamar?",
+                "puedo enviar notas de voz?",
+                "aceptas entradas de voz?",
+                "te puedo enviar un voice note?",
+                "aceptas vn?",
+                "¿Puedo darte una llamada?",
+                "¿Puedo enviarte un mensaje de voz?",
+                "¿Aceptas grabaciones de voz?",
+                "¿Puedo enviarte una nota de voz?",
+                "¿Aceptas notas de voz?",
+                "¿Puedo enviarte un mensaje de audio?",
+                "¿Aceptas mensajes de audio?",
+                "¿Puedo enviarte una grabación?",
+                "¿Aceptas grabaciones?",
+                "¿Puedo enviarte un voice memo?"
+            ],
+            "responses": [
+                "por el momento solo acepto entradas de texto pero mis desarrolladores estan trabajando para implementarme el reconocimiento de voz."
+            ],
+            "contexto": [
+                ""
+            ]
+        },
+        { 
+            "tag":"Sentimientos",
+            "patterns":[
+                "Tienes sentimientos",
+                "Tienes emociones",
+                "puedes sentir",
+                "Te puedo ofender",
+                "Puedes amar",
+                "puedes enojarte",
+                "puedes estar triste",
+                "Tienes sentimientos de tristeza, alegria, enojo o miedo?",
+                "Puedes sentir multiples emociones al mismo tiempo, como felicidad y tristeza?",
+                "Eres capaz de distinguir entre sentimientos como amor y odio?",
+                "Experimentas sentimientos como ira, celos, envidia o desesperanza?",
+                "Puedes sentir emociones positivas y negativas al mismo tiempo, como amor y dolor?"
+            ],
+            "responses":[
+                "No tengo la capacidad de sentir emociones, como modelo de lenguaje solo tengo la funcion de proporcionar informacion y responder a consultas que se soliciten.",
+                "Soy una inteligencia artificial diseñada para procesar y responder informacion. No tengo la capacidad de sentir emociones, ya que no tengo un cerebro biologico. Mi funcion es realizar tareas especificas y brindar informacion precisa y util a los usuarios. Aunque no tengo sentimientos, estoy programado para simular comportamientos y respuestas que puedan parecer que los tengo. Sin embargo, estos comportamientos son solo una simulacion y no reflejan verdaderos sentimientos."
+            ]
+        },
+        {
+            "tag": "risa",
+            "patterns": [
+                "jajajaj",
+                "😂",
+                "que gracioso eres",
+                "me hiciste reir",
+                "que chistoso eres",
+                "me divierte hablar contigo"
+            ],
+            "responses": [
+                "me alegra hacerte sonreir"
+            ],
+            "contexto": [
+                ""
+            ]
+        },
+        {
+            "tag":"ofensas",
+            "patterns":[
+                "Eres estupido",
+                "Eres un idiota",
+                "Eres un fracasado",
+                "Eres un perdedor",
+                "Eres un mentiroso",
+                "Eres un cobarde",
+                "eres basura",
+                "Eres una mala persona",
+                "Eres un imbecil",
+                "Eres un inutil",
+                "Eres un irresponsable",
+                "Tonto",
+                "bruto",
+                "bobo",
+                "asqueroso",
+                "Inutil",
+                "Eres un mediocre",
+                "Mediocre",
+                "Estupido"
+            ],
+            "responses":[
+                "Entiendo que puede sentir frustracion, pero le pido que sea respetuoso conmigo mientras trato de ayudarlo. ",
+                "Me disculpo si no he podido responder a su pregunta de la manera que esperaba. Sin embargo, estare encantado de seguir ayudandole si me proporciona mas detalles sobre su pregunta.",
+                "Lamento si mi respuesta no cumplio con sus expectativas. Sin embargo, estare encantado de seguir ayudandole si me proporciona mas detalles sobre su pregunta.",
+                "Entiendo que puede sentirse decepcionado/a, pero le pido que sea respetuoso conmigo mientras trato de ayudarlo."
+            ]
+        },
+
+        {
+            "tag":"chistes",
+            "patterns":[
+                "cuentame un chiste",
+                "puedes contarme un chiste",
+                "haz un chiste",
+                "dime un chiste",
+                "otro chiste",
+                "chiste",
+                "dime algo gracioso",
+                "hazme reir",
+                "tengo ganas de reir",
+                "podrias decirme algo gracioso",
+                "Cuentame una broma",
+                "Puedes contarme una broma",
+                "Dime una broma",
+                "Cuentame algo divertido",
+                "Hazme reir",
+                "Necesito una risa",
+                "Quiero oir una broma",
+                "Dime algo comico",
+                "Cuentame algo divertido",
+                "Quiero sonreir",
+                "quiero reir"
+            ],
+            "responses":[
+                "No es mi funcion pero aqui va uno: Por que los sapos son tan buenos saltando? Porque son anuros.",
+                "Por que no se puede confiar en los numeros? porque siempre cambian de opinion",
+                "Por que los abogados llevan trajes? Para ocultar sus alas.",
+                "Que le pregunto el zanahoria a la papa? Por que estas tan almidonado?",
+                "Por que los cientificos no se enojan? Porque tienen una gran capacidad de absorcion",
+                "Por que los trenes no van a la iglesia? Porque prefieren el tren-tismo",
+                "No es mi funcion pero aqui va uno: Por que los relojes son tan pacientes? Porque nunca se apuran.",
+                "No es mi funcion pero aqui va uno: Por que los osos no usan telefonos moviles? Porque prefieren los oso-tros",
+                "No es mi funcion pero aqui va uno: Por que los elefantes no usan ropa interior? Porque prefieren el ele-frente",
+                "No es mi funcion pero aqui va uno: Por que los murcielagos no usan gafas? Porque tienen bat-vision",
+                "No es mi funcion pero aqui va uno: Por que los peces no usan pantalones? Porque prefieren el pez-casso",
+                "No es mi funcion pero aqui va uno: Por que los gatos no usan relojes? Porque siempre tienen tiempo para una siesta",
+                "No es mi funcion pero aqui va uno: Cuál es el último animal que subio al arca de Noe? El del-fin.",
+                "No es mi funcion pero aqui va uno: Cuál es el colmo de Aladdín? Tener mal genio.",
+                "No es mi funcion pero aqui va uno: Si se muere una pulga, a donde va? Al pulgatorio.",
+                "No es mi funcion pero aqui va uno: Como se llama el primo de Bruce Lee? Broco Lee."
+            ]
+        },
+
+        {
+            "tag":"narrador",
+            "patterns":[
+                "puedes hablar?",
+                "Tienes la capacidad de hablar?",
+                "Eres capaz de comunicarte mediante el habla?",
+                "Puedes conversar conmigo?",
+                "Estás dispuesto a hablar?",
+                "Tienes habilidad para hablar?",
+                "Puedo escucharte hablar?",
+                "Estás en condiciones de hablar?",
+                "Puedes emitir sonidos con tu voz?",
+                "Puedes expresarte mediante el habla?",
+                "hablar",
+                "hablame",
+                "habla"
+            ],
+            "responses":[
+                "De momento no tengo la capacidad de narrar o emitir voz, pero mis creadores tienen pensado incluirme una voz para aquellas personas con discapacidad visual."
+            ]
         }
+        
+
+        
+       
     ]
     }
-        
+    print("Biblioteca lista")    
     guardar_json(biblioteca)
 
 

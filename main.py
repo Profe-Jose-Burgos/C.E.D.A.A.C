@@ -6,6 +6,7 @@ from intents_reference import start_intents
 from model_builder import start_model
 from nltk.stem import SnowballStemmer
 from tensorflow.keras.models import load_model
+import time
 stemmer = SnowballStemmer('spanish')
 
 
@@ -13,7 +14,10 @@ model=load_model("chatbot_model.h5")#Cargamos el modelo
 intents= json.loads(open("intents.json").read())#Cargamos el json | "base de datos"
 words=pickle.load(open("words.pkl","rb"))#cargamos la biblioteca de las palabras
 classes=pickle.load(open("classes.pkl","rb"))#cargamos la biblioteca de las clases
-
+global date_time
+global time_time
+time_time=(time.strftime("%I:%M:%S"))#hora
+date_time=(time.strftime("%d/%m/%y"))#fecha
 
 def clean_up_sentence(sentence):
     
@@ -57,6 +61,7 @@ def predict_class(sentence,model):#Para predecir que tipo o clase de palabra es
     
     results.sort(key=lambda x: x[1], reverse=True)  #Ordena el resultado de menor a mayor el resultado
     #                                                de las clases.
+    global return_list #return list la hacemos global
     return_list = []    
     for r in results:   
         return_list.append({"intent": classes[r[0]], "probability": str(r[1])})   
@@ -84,9 +89,22 @@ def chatbot_response():
         ints=predict_class(message,model)#toma el mensaje y el modelo y predice en que clase está
         response=get_response(ints,intents)#va a la funcion get_response para obtener la respuesta
         print(response)
+        txt = open ('log.txt','a',encoding='utf-8')#abrimos el txt
+        txt.write("\nFecha:{}, Hora:{}".format(date_time,time_time))
+        txt.write("\nmensaje del usuario: {}\n".format(message))
+        txt.write("presicion: {}\n".format(return_list))
+        txt.write("Respuesta del bot: {}\n".format(response))
+        txt.close()#cerramos el txt
         return response# retorna la respuesta a la pagina web para que sea impreso
     except Exception as e:
         print("Error: ", e)
+        txt = open ('log.txt','a',encoding='utf-8')#abrimos el txt
+        txt.write("\nFecha:{}, Hora:{}".format(date_time,time_time))
+        txt.write("\nERROR\n".format(message))
+        txt.write("mensaje del usuario: {}\n".format(message))
+        txt.write("presicion: {}\n".format(return_list))
+        txt.write("Lo siento, no pude entender tu mensaje.\n")
+        txt.close()#cerramos el txt
         return "Lo siento, no pude entender tu mensaje."
 
 

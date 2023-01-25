@@ -1,0 +1,125 @@
+
+Fecha25/01/23,Hora11:15:13
+mensaje del usuario: jajajaj
+presicion: [{'intent': 'saludos', 'probability': '0.35349542'}]
+Respuesta del bot: hola, soy un prototipo de un bot que esta dispuesto a responder tu solicitud, en que puedo ayudarte?
+
+Fecha25/01/23,Hora11:18:30
+mensaje del usuario: 😂
+presicion: [{'intent': 'saludos', 'probability': '0.33219272'}, {'intent': 'despedidas', 'probability': '0.26218852'}]
+Respuesta del bot: un saludo, soy un prototipo de un bot que esta dispuesto a responder tu solicitud, en que puedo ayudarte?
+
+Fecha25/01/23,Hora11:18:30
+mensaje del usuario: tienes sentimientos?
+presicion: [{'intent': 'politicaenvioentrega', 'probability': '0.95876074'}]
+Respuesta del bot: aqui le muestro una pagina con nuestra politica de envio y entrega, se abrira en otra pestaña.
+
+Fecha25/01/23,Hora11:18:30
+mensaje del usuario: tienes emociones
+presicion: [{'intent': 'politicaenvioentrega', 'probability': '0.95876074'}]
+Respuesta del bot: aqui le muestro una pagina con nuestra politica de envio y entrega, se abrira en otra pestaña.
+
+Fecha25/01/23,Hora11:23:34
+mensaje del usuario: jajaja
+presicion: [{'intent': 'saludos', 'probability': '0.3110439'}]
+Respuesta del bot: un saludo, soy un prototipo de un bot que esta dispuesto a responder tu solicitud, en que puedo ayudarte?
+
+Fecha25/01/23,Hora11:23:34
+mensaje del usuario: tienes sentimientos?
+presicion: [{'intent': 'Sentimientos', 'probability': '0.9975702'}]
+Respuesta del bot: Soy una inteligencia artificial diseñada para procesar y responder información. No tengo la capacidad de sentir emociones, ya que no tengo un cerebro biológico. Mi función es realizar tareas específicas y brindar información precisa y útil a los usuarios. Aunque no tengo sentimientos, estoy programado para simular comportamientos y respuestas que puedan parecer que los tengo. Sin embargo, estos comportamientos son solo una simulación y no reflejan verdaderos sentimientos.
+
+Fecha25/01/23,Hora11:23:34
+mensaje del usuario: que chistoso eres
+presicion: [{'intent': 'risa', 'probability': '0.82727456'}]
+Respuesta del bot: me alegra hacerte sonreir
+
+Fecha25/01/23,Hora11:23:34
+mensaje del usuario: dime un chiste
+presicion: [{'intent': 'chistes', 'probability': '0.99986315'}]
+Respuesta del bot: No es mi funcion pero aquí va uno: ¿Por qué los osos no usan teléfonos móviles? Porque prefieren los oso-tros
+
+Fecha25/01/23,Hora11:23:34
+mensaje del usuario: chiste
+presicion: [{'intent': 'chistes', 'probability': '0.99590224'}]
+Respuesta del bot: ¿Por qué los abogados llevan trajes? Para ocultar sus alas.
+
+Fecha25/01/23,Hora11:23:34
+mensaje del usuario: tonto
+presicion: [{'intent': 'ofensas', 'probability': '0.8571533'}]
+Respuesta del bot: Entiendo que puede sentirse decepcionado/a, pero le pido que sea respetuoso conmigo mientras trato de ayudarlo.
+
+Fecha25/01/23,Hora11:23:34
+mensaje del usuario: inutil
+presicion: [{'intent': 'ofensas', 'probability': '0.9430258'}]
+Respuesta del bot: Lamento si mi respuesta no cumplió con sus expectativas. Sin embargo, estaré encantado de seguir ayudándole si me proporciona más detalles sobre su pregunta.
+
+Fecha25/01/23,Hora11:23:34
+mensaje del usuario: estupido
+presicion: [{'intent': 'ofensas', 'probability': '0.9378341'}]
+Respuesta del bot: Entiendo que puede sentir frustración, pero le pido que sea respetuoso conmigo mientras trato de ayudarlo. 
+
+Fecha25/01/23,Hora11:23:34
+mensaje del usuario: cual es tu funcion
+presicion: [{'intent': 'funcionamiento', 'probability': '0.9999244'}]
+Respuesta del bot: Mi funcion es ayudar a los clientes con pagos, creditos, envios, pedidos, reembolsos, devoluciones, quejas, reclamos, informacion detallada sobre productos, formas de contactarnos y otras consultas de atencion al cliente. Además, también estoy capacitado para brindar soluciones y ayudar a resolver problemas relacionados con la cuenta del cliente, como problemas de inicio de sesión, actualización de información de contacto y actualización de la información de pago. También puedo proporcionar información sobre políticas de envío, tiempos de entrega, y detalles sobre garantías y devoluciones. Mi objetivo es asegurar que cada cliente tenga una experiencia satisfactoria y que sus necesidades sean atendidas de manera eficiente y amable.
+
+Fecha25/01/23,Hora11:23:34
+mensaje del usuario: bobo
+presicion: [{'intent': 'saludos', 'probability': '0.3110439'}]
+Respuesta del bot: un saludo, soy un prototipo de un bot que esta dispuesto a responder tu solicitud, en que puedo ayudarte?
+
+Fecha25/01/23,Hora11:23:34
+mensaje del usuario: agente
+presicion: [{'intent': 'repratencioncliente', 'probability': '0.9939336'}]
+Respuesta del bot: claro, para contactar con un representante de atencion al cliente puede escribir al telefono: +507 00000000.
+
+Fecha25/01/23,Hora11:23:34
+mensaje del usuario: 😂😂😂
+presicion: [{'intent': 'saludos', 'probability': '0.3110439'}]
+Respuesta del bot: un saludo, soy un prototipo de un bot que esta dispuesto a responder tu solicitud, en que puedo ayudarte?
+
+Fecha25/01/23,Hora11:23:34
+mensaje del usuario: vn
+presicion: [{'intent': 'saludos', 'probability': '0.27838904'}]
+Respuesta del bot: un saludo, soy un prototipo de un bot que esta dispuesto a responder tu solicitud, en que puedo ayudarte?
+
+Fecha: 25/01/23,Hora: 11:52:07
+mensaje del usuario: hola
+presicion: [{'intent': 'saludos', 'probability': '0.96289915'}]
+Respuesta del bot: un saludo, soy un prototipo de un bot que esta dispuesto a responder tu solicitud, en que puedo ayudarte?
+
+Fecha: 25/01/23,Hora: 11:52:07
+mensaje del usuario: dime un chiste
+presicion: [{'intent': 'chistes', 'probability': '0.99989676'}]
+Respuesta del bot: No es mi funcion pero aqui va uno: Por que los elefantes no usan ropa interior? Porque prefieren el ele-frente
+
+Fecha: 25/01/23,Hora: 11:52:07
+mensaje del usuario: dime otro chiste
+presicion: [{'intent': 'chistes', 'probability': '0.9985827'}]
+Respuesta del bot: No es mi funcion pero aqui va uno: Por que los murcielagos no usan gafas? Porque tienen bat-vision
+
+Fecha:25/01/23, Hora:11:57:14
+mensaje del usuario: bobo
+presicion: [{'intent': 'saludos', 'probability': '0.2973438'}]
+Respuesta del bot: un saludo, soy un prototipo de un bot que esta dispuesto a responder tu solicitud, en que puedo ayudarte?
+
+Fecha:25/01/23, Hora:11:57:14
+mensaje del usuario: tonto
+presicion: [{'intent': 'ofensas', 'probability': '0.7769428'}]
+Respuesta del bot: Lamento si mi respuesta no cumplio con sus expectativas. Sin embargo, estare encantado de seguir ayudandole si me proporciona mas detalles sobre su pregunta.
+
+Fecha:25/01/23, Hora:11:57:14
+mensaje del usuario: puedes hablar?
+presicion: [{'intent': 'Sentimientos', 'probability': '0.9846599'}]
+Respuesta del bot: Soy una inteligencia artificial diseñada para procesar y responder informacion. No tengo la capacidad de sentir emociones, ya que no tengo un cerebro biologico. Mi funcion es realizar tareas especificas y brindar informacion precisa y util a los usuarios. Aunque no tengo sentimientos, estoy programado para simular comportamientos y respuestas que puedan parecer que los tengo. Sin embargo, estos comportamientos son solo una simulacion y no reflejan verdaderos sentimientos.
+
+Fecha:25/01/23, Hora:11:57:14
+mensaje del usuario: inutil
+presicion: [{'intent': 'ofensas', 'probability': '0.9166985'}]
+Respuesta del bot: Me disculpo si no he podido responder a su pregunta de la manera que esperaba. Sin embargo, estare encantado de seguir ayudandole si me proporciona mas detalles sobre su pregunta.
+
+Fecha:25/01/23, Hora:11:57:14
+mensaje del usuario: Puedo escucharte hablar
+presicion: [{'intent': 'Sentimientos', 'probability': '0.9846599'}]
+Respuesta del bot: No tengo la capacidad de sentir emociones, como modelo de lenguaje solo tengo la funcion de proporcionar informacion y responder a consultas que se soliciten.
